@@ -1,11 +1,7 @@
-#---------------------------------------------
-# Endpoints Item de leilão
-### Busca todos os itens de leilão
 GET /itemdeleilao HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
-### Cria um item de leilão
 POST /itemdeleilao HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
@@ -16,7 +12,6 @@ Content-Type: application/json
   "leilaoAberto": true
 }
 
-### Atualiza um item de leilão
 PUT /itemdeleilao/2 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
@@ -27,7 +22,6 @@ Content-Type: application/json
   "leilaoAberto": true
 }
 
-### Registra um lance
 POST /itemdeleilao/1 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
@@ -39,9 +33,6 @@ Content-Type: application/json
   }
 }
 
-#---------------------------------------------
-# Endpoints Participante
-###
 POST /participante HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
