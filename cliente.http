@@ -1,0 +1,103 @@
+POST /itemdeleilao/2 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"valor":101.0,
+	"participante":{
+		"id":1
+	}
+}
+
+PATCH /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+POST /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+DELETE /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+GET /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+PUT /itemdeleilao/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"nome": "bicicleta CALOI",
+	"valorMinimo": 100.0,
+	"leilaoAberto": true
+}
+
+POST /itemdeleilao HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"nome": "cadeira",
+	"valorMinimo": 100.0,
+	"leilaoAberto": true
+}
+
+GET /itemdeleilao HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+DELETE /lance/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+GET /lance/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+PUT /lance/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"valor": 100.0,
+	"participante": {
+		"id": 1
+	}
+}
+
+GET /lance HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+DELETE /participante/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+GET /participante/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+PUT /participante/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"nome": "João",
+	"cpf": "12345678901"
+}
+
+POST /participante HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+	"nome": "Maria",
+	"cpf": "12345678901"
+}
+
+GET /participante HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
